@@ -31,8 +31,6 @@ export default class Content extends Component {
     console.log(this.state.selected)
     return this.state.selected
     // this function should take in the tab and update the state with the new tab.
-
-    console.log('Selected in state:', this.state.selected)
   };
 
   //filters data based off of the changeSelected function changing the selected state
