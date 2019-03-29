@@ -31,4 +31,5 @@ Card.propTypes = {
     })
   )
 }
+
 export default Cards;
