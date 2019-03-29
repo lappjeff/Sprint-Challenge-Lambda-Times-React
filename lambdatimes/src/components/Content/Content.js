@@ -28,7 +28,8 @@ export default class Content extends Component {
     this.setState({
       selected: tab
     })
-    console.log(this.state.selected)
+    console.log('changeSelected triggered on', this.state.selected)
+
     return this.state.selected
     // this function should take in the tab and update the state with the new tab.
   };
@@ -51,7 +52,7 @@ export default class Content extends Component {
       <div className="content-container">
         <Tabs
           tabs={this.state.tabs}
-          selectedTab={this.filterCards}
+          selectedTab={this.state.selected}
           selectTabHandler={this.changeSelected}/>
         <Cards cards={this.filterCards()} />
       </div>
